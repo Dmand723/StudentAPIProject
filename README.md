@@ -1,3 +1,3 @@
-# IntoToNodeJS
+# Student API project
 
-<h2>This is my intro to node JS</h2>
+<h2>This is the student API project</h2>
