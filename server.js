@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use("/", require("./routes"));
 app.use("/ttech", require("./routes"));
+app.use("/whatsThis", require("./routes"));
 app.listen(PORT, () => {
   console.log(`Test server running on port: ${PORT}`);
 });
