@@ -6,4 +6,34 @@ GET http://localhost:3000/ttech HTTP/1.1
 GET http://localhost:3000/ HTTP/1.1
 
 ### get all students 
-GET  http://localhost:3000/students
+GET  http://localhost:3000/students HTTP/1.1
+
+### get one student
+GET http://localhost:3000/students/67604afcb14c8bed9e58f52b HTTP/1.1
+
+### create a student 
+POST http://localhost:3000/students HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Phil",
+    "lastName": "Reeves",
+    "email": "bowser@killer.com",
+    "age": 34,
+    "currentCollege": "Assassin's Academy"
+
+}
+### update one student
+PUT http://localhost:3000/students/67604e7eb14c8bed9e58f52c HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "dude",
+    "middleInital": "d",
+    "lastName": "dudes",
+    "email": "dude.dudes@killer.com",
+    "age": 34,
+    "currentCollege": "Assassin's Academy"
+}
+### delete one student 
+DELETE http://localhost:3000/students/67605b8a628a64db55a7b1b1 HTTP/1.1
